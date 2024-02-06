@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 40%;
+    margin: 10px auto;
+    padding: 20px 0px 20px 0px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+
+
+}
+
+#volunteerBox {
+
+    height: 550;
+    width: 90%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 0px 20px 0px 20px;
+
+
+}
+
+#heading {
+    display: flex;
+    align-items: center;
+    color: #0b4619;
+    font-size: 18px;
+}
+
+#heading a {
+
+    color: #0b4619;
+    padding-right: 10px;
+}
+
+#title {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.volunteer-list {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 10px 0px;
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%; 
+    margin-right: 10px;
+   background-image: url('images.png');
+   background-size: cover;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.volunteer-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.details{
+    width: 100%;
+    margin-right: 50px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+    border: 2px solid #0b4619;
+    color: #0b4619;
+    border-radius: 5px;
+}
+
+button:hover {
+    padding: 5px;
+    cursor: pointer;
+    border: 2px solid #0b4619;
+    color: white;
+    background-color: #0b4619;
+    border-radius: 5px;
+}
+

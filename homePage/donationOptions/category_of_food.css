@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background: #a8ff78;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}
+
+.container {
+    height: 400px;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+     height: 360px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+ 
+}
+
+#heading p {
+    font-size: 1.5em;
+    margin: 0;
+    color: #0b4619;
+    font-weight: bold;
+    padding: 10px;
+        
+}
+
+#box1 p
+{
+    display: inline-block;
+     border: 2px solid black;  
+    height: 25px;
+    width: 50%;
+    padding: 10px; 
+    line-height: 25px;
+    margin: 10px; 
+    font-weight: bold;
+    /* color:black; */
+    /* color: white; */
+    position: relative;
+   
+   
+}
+/* #box1
+{
+     background-color: #0b4619;
+    border:2px solid #115ce0; 
+    margin: 10px;
+   
+} */
+ 
+input[type="checkbox"]
+{
+    width: 35px;
+    height:40px;
+    
+}
+#inputbox
+{
+   
+  display: inline;
+  position:absolute;
+ margin-top: 10px;
+   
+}
+
+hr
+{
+    border-color: #0b4619;
+    
+}
+
+input[type="submit"] {
+    width:200px ;
+    padding: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    color:white;
+    background-color:#0b4619;
+    font-weight: bold;
+    border-color: white;
+}
+
+input[type="radio"] {
+    margin-top: 5px;
+    width: 27px;
+    height: 40px;
+    margin-left: 20px;
+    padding-left: 30px;
+    accent-color: #0b4619;;
+}
+
+/* Style the radio button when checked */
+input[type="radio"]:checked {
+    
+    background-color: #0b4619;
+}
+    
+  

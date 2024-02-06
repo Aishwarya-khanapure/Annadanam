@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+}
+
+.container {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(72, 64, 64, 0.1);
+    overflow: hidden;
+
+}
+
+.box {
+    padding: 20px;
+    margin: 15px;
+    background-color: #f0f0f0;
+    text-align: center;
+
+}
+
+#heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #0b4619;
+}
+
+#heading i {
+    margin-right: 10px;
+    font-size: 1.5em;
+    padding-right: 5px;
+    margin: 0;
+    font-weight: bold;
+}
+
+#title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+
+
+#request-accept p {
+    display: inline-block;
+    text-align: center;
+
+}
+
+strong {
+    font-size: 18px;
+    color: #0b4619;
+    font-style: italic;
+
+}
+
+#request-accept {
+
+    border: 2px solid #0b4619;
+    border-radius: 20px;
+    height: 200px;
+    width: 220px;
+    background-color: white;
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#request-accept i {
+    color: #0b4619;
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* Green color for the check icon */
+}
+
+p {
+    margin-top: 10px;
+    font-size: 16px;
+
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

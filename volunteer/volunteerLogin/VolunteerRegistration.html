@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration</title>
+    <link rel="stylesheet" href="VolunteerRegistration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>  
+
+<form id="volunteerForm">
+<div class="container">
+    <div class="box">
+         
+            <div class="Register">
+               <h1> Volunteer Registration </h1>
+            </div>
+        <div class="photobox-container">
+            <div class="photobox">
+                <input type="file" id="photoUpload" name="photo" style="display: none;">
+                <img id="previewImage" alt="Preview Image"style="max-width: 100%; max-height: 200px;">
+            </div>
+            <label for="photoUpload" style="cursor: pointer;">
+                <i class="fa-solid fa-arrow-up-from-bracket" style="color: green; font-size: 20px;"></i>
+                Upload Photo
+            </label>
+        </div>
+                
+            <div class="inputbox">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Name" name="=name" id="Name" required>
+            </div>
+            
+            <div class="inputbox">
+                <i class="fas fa-phone"></i>
+                <input type="text" placeholder="Contact Number" name="contact" id="ContactNo" pattern="\d{10}" title="Please enter a 10-digit number" required>
+            </div>       
+    
+            <div class="inputbox">
+                <i class="fas fa-address-card"></i>
+                <input type="text" placeholder="Address" name="address" id="Address" required>
+            </div>
+              
+            <div class="inputbox">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email Address" name="pincode" id="Email" required>
+            </div>
+            <div id="avtime">
+                <label>Select available time range:</label>
+            </div>
+            
+            <div class="inputbox">
+              
+                <input type="time" id="startTime" name="startTime" placeholder="Start Time" min="09:00" max="23:00" onchange="validateTime()">
+                <span>-</span>
+                <input type="time" id="endTime" name="endTime" placeholder="End Time" min="09:00" max="23:00" onchange="validateTime()">
+            </div>
+            
+            <div>
+               <input type="submit" value="Done" id="submitbtn">
+            </div> 
+            
+
+    </div>
+
+</div>
+</form>
+<script src="VolunteerRegistrationScript.js"> </script> 
+</body>
+</html>

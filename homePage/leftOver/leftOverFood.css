@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background-color: #f4f4f4;
+}
+
+.container {
+    height: 950px;
+    width: 700px;
+    margin:  20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+     height: 905px;
+    padding: 20px;
+    background-color: #f0f0f0;
+ 
+}
+
+#heading{
+    display: flex;
+    gap: 30PX;
+}
+
+#backBtn{
+    border: none;
+    color: #0b4619;
+}
+#heading p {
+    font-size: 1.5em;
+    margin: 0;
+    color: #0b4619;
+    font-weight: bold;
+    padding: 10px;      
+}
+
+#checkBoxDiv{
+   font-size: 1.2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   border-bottom: solid 2px #0b4619;
+   width: 60%;
+   margin-top: 10px;
+   margin-left: 90px;
+   padding-bottom: 15px;
+    
+}
+.checkBox{
+    accent-color: #0b4619;
+    width: 20px;
+    height: 20px;
+    display: inline-block
+}
+
+/* foodlist and qnt */ 
+
+.foodItemHeading h3{
+    text-align: center;
+}
+.foodItemContainer{
+    display: flex;  
+    align-items: center; 
+    justify-content: space-between;
+}
+.foodNames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foodNames input[type="text"]{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 450;
+    background-color:white;
+    
+}
+.foodQutDiv input[type="number"]{
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 450;
+    background-color:white;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+ -webkit-appearance: none;
+}
+.foodQutDiv button{
+    width: 30px;
+    height: 30px;
+    margin:0 10px;
+    color: white;
+    background-color: #0b4619;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 450;
+}
+
+ /* end */
+input[type="checkbox"]
+{
+    width: 25px;
+    height:40px;
+}
+#inputbox
+{
+   
+  display: inline;
+  position:absolute;
+ margin-top: 60px;
+   
+}
+
+hr
+{
+    border-color: #0b4619;
+    
+}
+
+.timePickable{
+margin-top: 5px;
+margin-left: 10px;
+}
+#startTime{
+    font-size: 20px;
+}
+.timePickable h3{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.timePicker{
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    font-size: 1rem;
+    
+}
+.timeCalculation h3{
+    font-size: 18px;
+    margin-left: 15px;
+}
+.timeCal{
+    margin-left: 15px;
+    font-size: 1rem; 
+    height: 30px; 
+    width: 200px;
+}
+.QNT{
+    margin-left: 15px;
+    font-size: 1rem; 
+    height: 30px; 
+    width: 100px;
+}
+.QNTCalculation{
+    margin-bottom: 10px;
+}
+
+#submitButton {
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    color:white;
+    margin-left: 130px;
+    margin-top: 20px;
+    background-color:#0b4619;
+    font-weight: bold;
+}

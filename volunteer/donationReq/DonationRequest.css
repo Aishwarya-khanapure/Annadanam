@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Serif+Vithkuqi&family=Roboto&family=Vina+Sans&display=swap');
+@font-face {
+    font-family: KrutiDev;
+    src: url(fonts/marathi/k010/k010.woff);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+   overflow-x: hidden;
+   width: 100%;
+   height: calc(100vh);
+ }
+.navBar{
+    position: fixed;
+    width: 100%;
+    margin:auto;
+    top: 0;
+    left: 0;
+    padding: 2px 10px;
+    background:#014421;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    
+}
+.logoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 0px;
+    font-style: italic;
+    font-size: 15px;
+    
+    
+}
+.logoDiv img{
+    height: 50px;
+    width: auto;
+}
+/*
+.navigation{
+    margin-left: 50px;
+    margin-right: 100px;
+}
+*/
+.navigation li{
+    display: inline-block;
+    list-style-type: none; /* Remove default list item marker */
+    padding: 0; /* Remove default padding */
+    margin-left: 5px; /* Remove default margin */
+    padding: 0px 5px;
+
+}
+.navigation a{
+    position: relative;
+    font-size: 21PX;
+    color:white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 600px; /* Add margin between links*/
+    padding-right: 5px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left:0px;
+    width: 90%;
+    height: 3px;
+    background-color:white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.2s;
+}
+.navigation a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.btnLogin-popup {
+    width: 100px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 21PX;
+    color:white;
+    font-weight: 300;
+    transition: 0.3s, color 0.3s;
+}
+.loginDiv{
+    height: 50px;
+    padding: 5px;
+   
+}
+.loginDiv i {
+    font-size: 21px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.btnLogin-popup:hover{
+    background: white;
+    color: #0B4619;
+}
+
+/* top home screen */
+
+
+ main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(donate1\ \(3\).jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    position: relative;
+    
+ }
+ 
+ .wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.5 ease,height .2s ease;
+    
+ } 
+.wrapper.active-popup{
+    transform: scale(1);
+}
+ .wrapper.active{
+    height: 520px;
+ }
+ .iconClose{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #0B4619;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+ }
+ .formBox{
+    width: 100%;
+    padding: 40px;
+ }
+ .formBox.login{
+    transition:transform .18s ease;
+    transform: translateX(0);
+ }
+ .active .formBox.login{
+    transition: none;
+    transform: translateX(-400px);
+ }
+ .formBox.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+ }
+ .active .formBox.register{
+    transition:transform .18s ease;
+    transform: translateX(0);
+ }
+ .formBox h2{
+    font-size: 2em;
+    color: #0B4619;
+    text-align: center;
+ }
+ .inputBox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #0B4619;
+    margin: 30px 0;
+ }
+ .inputBox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #0B4619;
+    font-weight: 500;
+    pointer-events: none;
+ }
+.inputBox input:focus~label,
+.inputBox input:valid~label {
+    top: -5px;
+}
+
+ .inputBox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #0B4619;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+ }
+ .inputBox .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #0B4619;
+    line-height: 57px;
+ }
+ .rememberForgot{
+    font-size: 0.9em;
+    color: #0B4619;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .rememberForgot label input{
+    accent-color: #0B4619;
+    margin-right: 3px;
+ }
+ .rememberForgot a{
+    color: #0B4619;
+    text-decoration: none;
+ }
+ .rememberForgot a:hover{
+    text-decoration: underline;
+ }
+ .btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: #0B4619;
+    color:white;
+    font-weight: 700;
+ }
+ .loginRegister{
+    font-size: 0.9em;
+    color: #0B4619;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+ }
+ .loginRegister p a{
+    color: #0B4619;
+    text-decoration: none;
+    font-weight: 600;
+ }
+ .loginRegister p a:hover{
+    text-decoration: underline;
+ }
+
+
+/* cart ater home image */
+
+.container
+{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 30px 25px 20px 25px;
+ padding: 5px;
+ background-color: #fff;
+ border: 1px solid #ccc;
+}
+
+.box{
+   display: inline-block;
+   height: 180px;
+   width: 25%;
+  background: #ffffff;
+  padding: 5px 25px 5px 5px;
+  margin: 10px ; 
+  border-right: 2px solid#014421;;   
+   }
+ #div4
+{
+    border-right: none;
+}
+h4{
+  text-align: center;
+  
+  font-size: 18px;
+  margin: 7px 0;
+  font-family: "Poppins", sans-serif !important;
+  background: #ffffff;
+  position: unset !important;
+ }
+ .cartPara{
+    font-size: 13px;
+    color: #a4a3a3;
+    margin-top: 8px;
+    display: table;
+    text-align: center;
+    font-weight: 300;
+ }
+ .cartImg{
+      width: 35px;
+      margin: 0 auto;
+      display: flex;    
+   }
+
+.ourVision{
+   display: flex;
+   height: 550px;
+   justify-content: center;
+   padding: 10px;
+   margin-top: 70px;
+
+}
+.ourVisionContent{
+   width: 600px;
+   padding-left:20px;  
+}
+.ourVisionContent h2{
+  font-size: 28PX;
+  border-bottom: 4px solid #014421;
+  width: 50%;
+}
+.ourVisionContent p{
+   margin-top: 20px;
+   font-family: "Poppins", sans-serif !important;
+   line-height: 25px;
+   letter-spacing: 0.px;
+   font-size: 18px;
+}
+.ourVisionImg{
+   margin-top: 45px;
+   margin-left: 25px;
+   padding: 20px;
+   border-top: 2px solid black;
+   border-right: 2px solid black;
+   border-top-right-radius: 50px;
+   border-bottom-right-radius: 50px;
+}
+.ourVisionImg img{
+   border-top-right-radius: 50px;
+   border-bottom-right-radius: 50px;
+}
+
+/* our mission section */
+.ourMission{
+   display: flex;
+   height: 500px;
+   justify-content: center;
+   padding: 10px;
+   margin-top: 50px;
+
+}
+.ourMissionContent{
+   width: 600px;
+   padding-left:5px;  
+}
+.ourMissionContent h2{
+  font-size: 28PX;
+  border-bottom: 4px solid #014421;
+  width: 50%;
+}
+.ourMissionContent p{
+   margin-top: 20px;
+   font-family: "Poppins", sans-serif !important;
+   line-height: 25px;
+   letter-spacing: 0.px;
+   font-size: 18px;
+}
+.ourMissionImg{
+   margin-top: 45px;
+   margin-right: 55px;
+   padding: 20px;
+   border-top: 2px solid black;
+   border-right: 2px solid black;
+   border-top-right-radius: 50px;
+   border-bottom-right-radius: 50px;
+}
+.ourMissionImg img{
+   border-top-right-radius: 50px;
+   border-bottom-right-radius: 50px;
+   height: 400px;
+   width: 600px;
+}
+
+/**footer**/
+footer{
+   margin-top: 150px;
+}
+.foot-panal1{
+   background-color: #33694d;
+   color: white;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.85rem;
+}
+.foot-panal2{
+   background-color: #1a5637;
+   color: white;
+   height: 300px;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.footerList{
+   margin-top: 20px;
+}
+.footerList a{
+
+   display: block;
+   font-size: 0.85rem;
+   margin-top: 10px;
+   color: #dddddd;
+}
+
+.foot-panal3{
+   background-color: #1a5637;
+   color: white;
+   border-top: 0.5px solid white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.logo{
+   display: flex;
+   background-size: cover;
+   height: 60px;
+   width: 700px;
+   justify-content: center;
+}
+.logo img{
+   height: 50px;
+   width: auto;
+}
+.logo p{
+   padding: 20px;
+}
+.foot-panal4
+{
+   background-color: #002f17;
+   color: white;
+   height: 80px;
+   font-size: 0.7rem;
+   text-align: center;
+}
+.pages{ 
+   padding-top: 25px;
+}
+.copyright{
+   padding-top: 5px;
+   
+}
+.loginD{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+#bell{
+  font-size: 25px;
+  margin-top: 10px;
+}
+.icon-button__badge {
+   position: relative;
+   top: -10px;
+   right: -0px;
+   width: 500px;
+   height: 500px;
+   border-radius: 50%;
+   color:red;
+   font-size: 20px;
+
+   }
+
+   #donorDetailsDiv {
+      border: 2px solid red; /* Add a red border for visibility */
+      padding: 10px; /* Add padding for better appearance */
+      width: 350px;
+      margin:6px;
+      padding: 10px;
+  }
+
+
+ 

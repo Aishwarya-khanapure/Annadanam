@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Noto+Serif+Vithkuqi&family=Roboto&family=Vina+Sans&display=swap');
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.thank-you-box {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 100px;
+    border-radius: 80px;
+    box-shadow: 20px 20px 15px 15px rgba(22, 132, 1, 0.4);
+}
+h1 {
+    color: #0b4619;
+}
+p {
+    margin-top: 10px;
+    color: #333;
+}

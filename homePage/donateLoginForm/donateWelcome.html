@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Doner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="donateWelcome.css"> 
+</head>
+<body>
+<form id="donateForm" >
+<div class="container">
+<div class="box">
+    <div id="heading"><p>Welcome Donor</p></div>
+    <div id="inputitem">
+        <div>
+        <!-- input box for name -->
+            <div id="inputbox">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Name" name="=name" id="Name" required>
+            </div>
+          
+        <!-- input box for contact Number-->    
+            <div id="inputbox">
+                <i class="fas fa-phone"></i>
+                <input type="text" placeholder="Contact Number" name="contact" id="ContactNo" pattern="\d{10}" title="Please enter a 10-digit number" required>
+            </div>
+        
+        <!-- input box for email id -->    
+            <div id="inputbox">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="G-Mail" name="gmail" id="Gmail" required>
+            </div>
+           
+        <!-- input box for address-->
+            <div id="inputbox">
+                <i class="fas fa-address-card"></i>
+                <input type="text" placeholder="Address" name="address" id="Address" required>
+            </div>
+
+       <!-- input box for pincode number -->         
+            <div id="inputbox">
+                <i class="fas fa-location-pin"></i>
+                <input type="text" placeholder="Pincode Number" name="pincode" id="Pincocde" required>
+            </div>
+
+        <!-- input box for location -->        
+            <div id="inputbox">
+                <i class="fas fa-location-dot"></i>
+                <input type="text" placeholder="Location" name="location" id="Location" required>
+            </div>
+
+        <!-- input box for name -->       
+        
+            <div id="submitButton">
+                <input type="submit" value="Donate" id="submitBtn">
+            </div>
+    
+        </div>
+    </div>
+</div>
+</div>
+</form>
+<script src="donateWelcome.js"> </script>
+</body>
+</html>
